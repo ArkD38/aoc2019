@@ -1,5 +1,4 @@
 print("hello world, this is my solution for Advent of Code 2019 day 2")
-print("this is not the correct solution! help :(")
 o_lista = [] #Ebbe megy a bemenet
 
 
@@ -21,18 +20,15 @@ print(o_lista)
 
 def darabolo(lista):
     #lista <- o_lista
-    for i in range(len(lista)):
+    i = 0
+    while i+3 < len(lista) and (lista[i] == 1 or lista[i] == 2):
         if lista[i] == 1:
             lista[lista[i+3]] = lista[lista[i+1]] + lista[lista[i+2]]
-            i += 4
         elif lista[i] == 2:
             lista[lista[i+3]] = lista[lista[i+1]] * lista[lista[i+2]]
-            i += 4
-        else:
-            break
-        return(lista)
+        i += 4
+    return(lista)
 
-#-----()-----
-# itt nincs olyan hogy int main() de ha lenne akkor ez lenne az
-#-----()-----
+
+
 print(darabolo(o_lista))
