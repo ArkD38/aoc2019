@@ -1,4 +1,5 @@
 print("hello world, this is my solution for Advent of Code 2019 day 2")
+print("this is not the correct solution! help :(")
 o_lista = [] #Ebbe megy a bemenet
 
 
