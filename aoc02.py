@@ -30,4 +30,8 @@ def darabolo(lista):
         else:
             break
         return(lista)
+
+#-----()-----
+# itt nincs olyan hogy int main() de ha lenne akkor ez lenne az
+#-----()-----
 print(darabolo(o_lista))
